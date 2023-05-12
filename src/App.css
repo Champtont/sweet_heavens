@@ -1,31 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@300;400;700&display=swap");
+
+/*Variables*/
+:root {
+  --specialOverLay: #037f816d;
+  --specialBlue: #008381;
+  --specialPink: rgb(254, 183, 224);
+  --specialPinkOverLay: rgba(254, 183, 224, 0.639);
+  --laceWhite: antiquewhite;
+  --gold: rgb(199, 169, 1);
+  --lightgold: gold;
+  --darkgold: rgb(157, 134, 0);
+}
+
 .App {
   text-align: center;
+  font-family: "Kalam";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*MainPage*/
+#mainContainer {
+  background-image: url("./components/assets/slowspinClouds.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#mainContainerOverlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    45deg,
+    var(--specialOverLay),
+    var(--specialPinkOverLay)
+  );
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+#title {
+  width: 100%;
+  padding: 0.2em;
+  border-top: 1pt solid var(--lightgold);
+  border-bottom: 1pt solid var(--darkgold);
+  background-color: rgba(250, 235, 215, 0.534);
+  font-family: "Great Vibes";
+  font-size: 50pt;
+  position: absolute;
+  top: 40%;
+  color: var(--gold);
+  text-shadow: 0 15px 8px var(--specialBlue);
 }
 
 @keyframes App-logo-spin {
