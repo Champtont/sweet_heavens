@@ -4,9 +4,13 @@ import MainPage from "./components/views/MainPage";
 
 function App() {
   return (
-    <div className="App">
-      <MainPage />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -29,33 +29,99 @@
   position: relative;
 }
 #mainContainerOverlay {
-  height: 100%;
-  width: 100%;
+  height: 100dvh;
+  width: 100dvw;
   background-image: linear-gradient(
     45deg,
     var(--specialOverLay),
     var(--specialPinkOverLay)
   );
+  animation: mainLightsOverlay 10s linear infinite;
 }
-#title {
+
+.capitals {
+  position: absolute;
+  font-family: "Great Vibes";
+  font-size: 50pt;
+  color: var(--gold);
+  top: 24%;
+  transition: top 1s ease-in-out;
+}
+#capitalH {
+  right: 48%;
+}
+#capitalS {
+  left: 37%;
+  z-index: 1;
+}
+#banner {
+  height: 85px;
   width: 100%;
   padding: 0.2em;
   border-top: 1pt solid var(--lightgold);
   border-bottom: 1pt solid var(--darkgold);
-  background-color: rgba(250, 235, 215, 0.534);
+  background-color: white;
   font-family: "Great Vibes";
   font-size: 50pt;
   position: absolute;
   top: 40%;
   color: var(--gold);
-  text-shadow: 0 15px 8px var(--specialBlue);
+  transition: height 1s ease-in-out;
+}
+.title {
+  transition: opacity 1s ease-in-out;
+}
+#banner:hover {
+  height: 150px;
+}
+#banner:hover .capitals {
+  top: 10%;
+}
+#banner:hover .title {
+  opacity: 0;
+}
+.space {
+  margin-left: 1.2em;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes mainLightsOverlay {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  40% {
+    background-image: linear-gradient(
+      135deg,
+      var(--specialOverLay),
+      var(--specialPinkOverLay)
+    );
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  75% {
+    background-image: radial-gradient(
+      var(--specialOverLay),
+      var(--specialPinkOverLay)
+    );
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
