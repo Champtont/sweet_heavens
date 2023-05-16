@@ -49,10 +49,12 @@
 }
 #capitalH {
   right: 48%;
+  transition: right 1s ease-in-out;
 }
 #capitalS {
   left: 37%;
   z-index: 1;
+  transition: left 1s ease-in-out;
 }
 #banner {
   height: 85px;
@@ -69,7 +71,8 @@
   transition: height 1s ease-in-out;
 }
 .title {
-  transition: opacity 1s ease-in-out;
+  height: 83px;
+  transition: opacity 1s ease-in-out, height 1s ease-in-out;
 }
 #banner:hover {
   height: 150px;
@@ -77,11 +80,56 @@
 #banner:hover .capitals {
   top: 10%;
 }
+#banner:hover #capitalS {
+  left: 22%;
+}
+#banner:hover #capitalH {
+  right: 73%;
+  top: 30%;
+}
 #banner:hover .title {
   opacity: 0;
+  height: 49px;
 }
 .space {
   margin-left: 1.2em;
+}
+#MainPageSlideContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20pt;
+  transform: translateX(1100px);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out 0.3s;
+}
+#banner:hover #MainPageSlideContainer {
+  transform: translateX(0);
+  opacity: 1;
+}
+#MainPageSlideContainer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+.slideOption {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+  box-shadow: gray 0 10px 10px;
+  border-top: var(--lightgold) solid 1pt;
+  border-bottom: var(--darkgold) solid 2pt;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.slideOption:hover {
+  background-color: black;
+  background-image: url("./components/assets/5Xyg.gif");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  transform: scale(1.1);
 }
 
 @keyframes spin {

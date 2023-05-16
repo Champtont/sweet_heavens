@@ -1,4 +1,4 @@
-import clouds from "../assets/Clouds.gif";
+import MainPageSlide from "../navigation/MainPageSlide";
 
 const MainPage = () => {
   return (
@@ -15,6 +15,7 @@ const MainPage = () => {
           {" "}
           H
         </div>
+        <MainPageSlide />
       </div>
     </div>
   );
