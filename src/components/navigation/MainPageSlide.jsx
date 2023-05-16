@@ -8,7 +8,7 @@ const MainPageSlide = () => {
         <div className="slideOption">My Cart</div>
       </a>
       <a href="">
-        <div className="slideOption">About</div>
+        <div className="slideOption">About Us</div>
       </a>
     </div>
   );

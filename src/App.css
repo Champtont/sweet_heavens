@@ -45,16 +45,15 @@
   font-size: 50pt;
   color: var(--gold);
   top: 24%;
-  transition: top 1s ease-in-out;
 }
 #capitalH {
   right: 48%;
-  transition: right 1s ease-in-out;
+  transition: right 1s ease-in-out, top 1s ease-in-out;
 }
 #capitalS {
   left: 37%;
   z-index: 1;
-  transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out, top 1s ease-in-out;
 }
 #banner {
   height: 85px;
@@ -74,20 +73,26 @@
   height: 83px;
   transition: opacity 1s ease-in-out, height 1s ease-in-out;
 }
-#banner:hover {
+#banner:hover,
+#banner:focus-within {
   height: 150px;
 }
-#banner:hover .capitals {
+
+#banner:hover .capitals,
+#banner:focus-within .capitals {
   top: 10%;
 }
-#banner:hover #capitalS {
+#banner:hover #capitalS,
+#banner:focus-within #capitalS {
   left: 22%;
 }
-#banner:hover #capitalH {
+#banner:hover #capitalH,
+#banner:focus-within #capitalH {
   right: 73%;
   top: 30%;
 }
-#banner:hover .title {
+#banner:hover .title,
+#banner:focus-within .title {
   opacity: 0;
   height: 49px;
 }
@@ -105,7 +110,8 @@
   opacity: 0;
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out 0.3s;
 }
-#banner:hover #MainPageSlideContainer {
+#banner:hover #MainPageSlideContainer,
+#banner:focus-within #MainPageSlideContainer {
   transform: translateX(0);
   opacity: 1;
 }
@@ -123,7 +129,8 @@
   border-bottom: var(--darkgold) solid 2pt;
   transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-.slideOption:hover {
+.slideOption:hover,
+.slideOption:focus {
   background-color: black;
   background-image: url("./components/assets/5Xyg.gif");
   background-repeat: no-repeat;

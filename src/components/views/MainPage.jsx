@@ -4,7 +4,7 @@ const MainPage = () => {
   return (
     <div id="mainContainer">
       <div id="mainContainerOverlay"></div>
-      <div id="banner">
+      <div id="banner" tabIndex={0}>
         <div id="capitalS" className="capitals">
           S
         </div>

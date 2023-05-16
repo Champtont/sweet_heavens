@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "picture": "./Brownie-de-castanas.jpg",
+    "name": "treat1",
+    "category": "snack",
+    "description": "a treat",
+    "price": 2.1
+  },
+  {
+    "id": "2",
+    "picture": "./chocolate-cake-donuts-FI-500x500.jpg",
+    "name": "treat1",
+    "category": "snack",
+    "description": "a treat",
+    "price": 5.0
+  },
+  {
+    "id": "3",
+    "picture": "./cinnamon-sucker.jpg",
+    "name": "treat1",
+    "category": "candy",
+    "description": "a treat",
+    "price": 1.0
+  }
+]

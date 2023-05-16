@@ -1,0 +1,9 @@
+const MenuPage = () => {
+  return (
+    <div>
+      <div></div>
+    </div>
+  );
+};
+
+export default MenuPage;
