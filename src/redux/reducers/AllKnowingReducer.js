@@ -1,5 +1,6 @@
 const initialState = {
   isDeleting: false,
+  wantsToLogin: false,
 };
 
 const allKnowingReducer = (state = initialState, action) => {

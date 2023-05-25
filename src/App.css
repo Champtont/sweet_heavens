@@ -132,16 +132,18 @@ button.slideOption {
   align-items: center;
   border-radius: 5px;
   padding: 0.2em 0.5em;
-  box-shadow: gray 0 10px 10px;
+  box-shadow: gray 0 5px 10px;
   border-top: var(--lightgold) solid 1pt;
   border-bottom: var(--darkgold) solid 2pt;
-  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
 }
 .slideOption:hover,
 .slideOption:focus {
   background-color: black;
   background-image: url("./components/assets/5Xyg.gif");
   background-repeat: no-repeat;
+  box-shadow: lightgray 0 10px 10px;
   background-position: top;
   background-size: cover;
   transform: scale(1.1);

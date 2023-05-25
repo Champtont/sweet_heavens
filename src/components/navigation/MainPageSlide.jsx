@@ -4,9 +4,9 @@ import LinkButton from "../buttons/LinkButton";
 const MainPageSlide = () => {
   return (
     <div id="MainPageSlideContainer">
-      <LinkButton title="Menu" url="" />
+      <LinkButton title="Menu" url="/" />
       <LoginButton />
-      <LinkButton title="About Us" url="" />
+      <LinkButton title="About Us" url="/" />
     </div>
   );
 };
