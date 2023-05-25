@@ -119,6 +119,14 @@
   color: var(--gold);
   text-decoration: none;
 }
+button.slideOption {
+  background-color: white;
+  border-left: none;
+  border-right: none;
+  color: var(--gold);
+  font-size: 20pt;
+  font-family: "Great Vibes";
+}
 .slideOption {
   display: flex;
   align-items: center;
@@ -137,7 +145,15 @@
   background-position: top;
   background-size: cover;
   transform: scale(1.1);
+  outline: var(--lightgold) solid 1pt;
 }
+
+/*CSS controlled with JS*/
+.displayNone {
+  display: none;
+}
+
+/*animations*/
 
 @keyframes spin {
   from {
